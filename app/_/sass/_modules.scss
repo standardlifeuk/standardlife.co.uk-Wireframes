@@ -1,0 +1,22 @@
+.next-actions {
+	@include respond-min(48em) {
+		position: relative;
+		}
+	}
+
+.next-actions-feature {
+	background: #bbb;
+	margin: 0;
+	}
+
+.next-actions-related {
+	@include respond-min(48em) {
+		bottom: 0;
+		left: 0;
+		margin-top: 19em;
+		padding: 3em 1em 3em 33.333%;
+		position: absolute;
+		right: 0;
+		z-index: -1;
+		}
+	}

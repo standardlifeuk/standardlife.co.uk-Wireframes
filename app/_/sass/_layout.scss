@@ -1,0 +1,508 @@
+// Layout utilities
+//
+// Classes to help responsive layout
+//
+//Styleguide 10.0
+
+// Pull left or right
+//
+// .pull-left - Pull left
+// .pull-left--medium - Pull left after medium breakpoint
+// .pull-left--large - Pull left after large breakpoint
+// .pull-right - Pull right
+// .pull-right--medium - Pull right after medium breakpoint
+// .pull-right--large - Pull right after large breakpoint
+//
+// Markup:
+// <a class="btn {$modifiers}">{$modifiers}</a>
+//
+// Styleguide 10.1
+
+
+// Add margins
+//
+// .push - All sides
+// .push--top - Top margin
+// .push--right - Right margin
+// .push--bottom - Bottom margin
+// .push--left - Left margin
+// .push--ends - Vertical margins
+// .push--sides - Horizontal margin
+// .push-half - Half margins
+// .push-half--top - Half top margin
+// .push-half--right - Half right margin
+// .push-half--bottom - Half bottom margin
+// .push-half--left - Half left margin
+// .push-half--ends - Half vertical margins
+// .push-half--sides  - Half horizontal margins
+//
+// Markup:
+// <div class="bg-yellow inline-block ">
+//   <div class="bg-light-blue soft white inline-block {$modifiers}">.{$modifiers}</div>
+// </div>
+//
+// Styleguide 10.2
+
+	
+// Remove margins
+//
+// .flush - Remove all margins
+// .flush--top - Remove top margin
+// .flush--right - Remove right margin
+// .flush--bottom - Remove bottom margin
+// .flush--left - Remove left margin
+// .flush--ends - Remove vertical margins
+// .flush--sides - Remove horizontal margins
+//
+// Markup:
+// <div class="bg-yellow inline-block ">
+//   <div class="bg-light-blue soft push white inline-block {$modifiers}">.{$modifiers}</div>
+// </div>
+//
+// Styleguide 10.3
+
+
+// Add padding
+//
+// .soft - All sides
+// .soft--top - Top padding
+// .soft--right - Right padding
+// .soft--bottom - Bottom padding
+// .soft--left - Left padding
+// .soft--ends - Vertical padding
+// .soft--sides - Horizontal padding
+// .soft-half - Half padding
+// .soft-half--top - Half top padding
+// .soft-half--right - Half right padding
+// .soft-half--bottom - Half bottom padding
+// .soft-half--left - Half left padding
+// .soft-half--ends - Half vertical padding
+// .soft-half--sides  - Half horizontal padding
+//
+// Markup:
+// <div class="bg-yellow soft inline-block">
+//   <div class="bg-light-blue white inline-block {$modifiers}">.{$modifiers}</div>
+// </div>
+//
+// Styleguide 10.4
+
+
+// Remove padding
+//
+// .hard - Remove all padding
+// .hard--top - Remove top padding
+// .hard--right - Remove right padding
+// .hard--bottom - Remove bottom padding
+// .hard--left - Remove left padding
+// .hard--ends - Remove vertical padding
+// .hard--sides - Remove horizontal padding
+//
+// Markup:
+// <div class="bg-yellow soft inline-block">
+//   <div class="bg-light-blue soft white inline-block {$modifiers}">.{$modifiers}</div>
+// </div>
+//
+// Styleguide 10.5
+
+
+	
+// Text align classes
+//
+// .text--left - Text left
+// .text--right - text align right
+// .text--right--medium - text align right after medium breakpoint
+// .text--right--large - text align right after large breakpoint
+//
+// Markup:
+// <div class="bg-yellow block">
+//   <div class="dark-blue block {$modifiers}">.{$modifiers}</div>
+// </div>
+//
+// Styleguide 10.6
+
+.block {
+	display:block;
+	}
+	
+.inline-block {
+	display:inline-block !important;
+	width:auto !important;
+	}
+	
+.absolute {
+	position:absolute;
+	}
+
+.relative {
+	position:relative;
+	}
+	
+.centered {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	}
+	
+.fixed {
+	@include respond-min(60em) {
+		margin-left: auto;
+    	margin-right: auto;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index:10;
+		}
+	}
+	
+.top {
+	top:0;
+	}
+
+.right {
+	right:0;
+	}
+		
+.pull-right {
+	float:right !important;
+	}
+	
+.pull-right--medium {
+	@include respond-min(48em) {
+		float:right !important;
+		}
+	}
+	
+.pull-right--large {
+	@include respond-min(60em) {
+		float:right !important;
+		}
+	}
+	
+.pull-left {
+	float:left !important;
+	}
+	
+.pull-left--medium {
+	@include respond-min(48em) {
+		float:left;
+		}
+	}
+	
+.pull-left--large {
+	@include respond-min(60em) {
+		float:left;
+		}	
+	}
+
+
+
+	
+/**
+ * Add/remove margins
+ */
+.push { 
+	margin:$font-base-line-height!important;
+	}
+	
+.push--medium {
+	@include respond-min(48em) {
+		margin:$font-base-line-height!important;
+		}
+	}
+		
+.push--top { 
+	margin-top:$font-base-line-height!important;
+	}
+	
+.push--right { 
+	margin-right: $font-base-line-height!important; 
+	}
+	
+.push--bottom { 
+	margin-bottom:$font-base-line-height!important; 
+	}
+
+.push--left { 
+	margin-left:$font-base-line-height!important; 
+	}
+
+.push--ends { 
+	margin-top:$font-base-line-height!important; 
+	margin-bottom:$font-base-line-height!important;
+	}
+	
+.push--sides { 
+	margin-right: $font-base-line-height!important; 
+	margin-left:  $font-base-line-height!important; 
+	}
+
+.push-half { 
+	margin:$font-base-line-height-half!important;
+	}
+	
+.push-half--top { 
+	margin-top:$font-base-line-height-half!important; 
+	}
+	
+.push-half--right { 
+	margin-right: $font-base-line-height-half!important; 
+	}
+	
+.push-half--bottom { 
+	margin-bottom:$font-base-line-height-half!important; 
+	}
+	
+.push-half--left { 
+	margin-left:$font-base-line-height-half!important; 
+	}
+	
+.push-half--ends { 
+	margin-top:$font-base-line-height-half!important; 
+	margin-bottom:$font-base-line-height-half!important; 
+	}
+	
+.push-half--sides { 
+	margin-right: $font-base-line-height-half!important; 
+	margin-left:  $font-base-line-height-half!important; 
+	}
+	
+
+
+.flush { 
+	margin:0!important; 
+	}
+	
+.flush--top { 
+	margin-top: 0!important; 
+	}
+	
+.flush--right { 
+	margin-right: 0!important; 
+	}
+	
+.flush--bottom { 
+	margin-bottom:0!important; 
+	}
+	
+.flush--left { 
+	margin-left:  0!important; 
+	}
+	
+.flush--ends { 
+	margin-top:   0!important; 
+	margin-bottom:0!important; 
+	}
+	
+.flush--sides { 
+	margin-right: 0!important; 
+	margin-left:  0!important; 
+	}
+
+
+/**
+ * Add/remove paddings
+ */
+.soft { 
+	padding:$font-base-line-height!important; 
+	}
+	
+.soft--medium {
+	@include respond-min(48em) {
+		padding:$font-base-line-height!important;
+		}
+	}
+	
+.soft--large {	
+	@include respond-min(60em) {
+		padding:$font-base-line-height!important;
+		}
+	}
+	
+.soft--top { 
+	padding-top:$font-base-line-height!important; 
+	}
+	
+.soft--right { 
+	padding-right:$font-base-line-height!important; 
+	}
+	
+.soft--bottom { 
+	padding-bottom:$font-base-line-height!important; 
+	}
+	
+.soft--left { 
+	padding-left:$font-base-line-height!important;
+	}
+	
+.soft--ends { 
+	padding-top:$font-base-line-height!important; 
+	padding-bottom:$font-base-line-height!important; 
+	}
+	
+.soft--sides { 
+	padding-right:$font-base-line-height!important; 
+	padding-left:  $font-base-line-height!important;
+	}
+
+.soft-half { 
+	padding:$font-base-line-height-half!important; 
+	}
+	
+.soft-half--top { 
+	padding-top:$font-base-line-height-half!important; 
+	}
+	
+.soft-half--right {
+	padding-right:$font-base-line-height-half!important;
+	}
+	
+.soft-half--bottom { 
+	padding-bottom:$font-base-line-height-half!important; 
+	}
+	
+.soft-half--left { 
+	padding-left:$font-base-line-height-half!important;
+	}
+	
+.soft-half--ends { 
+	padding-top:$font-base-line-height-half!important; 
+	padding-bottom:$font-base-line-height-half!important;
+	}
+	
+.soft-half--sides { 
+	padding-right:$font-base-line-height-half!important; 
+	padding-left:  $font-base-line-height-half!important; 
+	}
+
+.hard { 
+	padding: 0!important; 
+	}
+
+.hard--top { 
+	padding-top:0!important; 
+	}
+
+.hard--right { 
+	padding-right: 0!important; 
+	}
+	
+.hard--bottom { 
+	padding-bottom:0!important; 
+	}
+	
+.hard--left { 
+	padding-left:0!important; 
+	}
+	
+.hard--ends { 
+	padding-top:0!important;
+	padding-bottom:0!important;
+	}
+
+.hard--sides { 
+	padding-right: 0!important;
+	padding-left:  0!important;
+	}
+	
+
+
+.text--center {
+	text-align:center;
+	}
+	
+.text--left {
+	text-align:left;
+	}
+
+.text--right {
+	text-align:right;
+	}
+	
+.text--right--medium {
+	@include respond-min($medium) {
+		text-align:right;
+		}
+	}
+	
+.text--right--large {
+	@include respond-min($large)  {
+		text-align:right;
+		}
+	}
+
+.square {
+    float: left;
+    padding-bottom: 50%;
+    position: relative;
+    width: 50%;
+	}
+	
+.square__inner {
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+	}
+
+
+
+
+
+pre {
+	background-color:$light-grey-1;
+	border:1px solid $light-grey-3;
+	line-height:lh(13/16);
+	margin-bottom:lh(1);
+	padding:lh(1);
+	}
+
+.affix {
+	position:fixed;
+	width:inherit;
+	}
+	
+.wrap {
+	margin: 0 auto;
+	width: 94%;
+	
+	@include respond-min(60em) {
+		max-width: 1200px;
+		width: 100%;
+		}
+		
+	@include respond-min(90em) {
+		max-width: 1500px;
+		width: 100%;
+		}
+	
+	}
+
+.content {	
+	position: relative;
+	z-index: 3;
+	}
+
+.panel--pull-up {
+	@include respond-min(60em)  {
+		margin-top: -120px;
+		}
+	}
+
+.panel--push-down {
+	@include respond-min(60em)  {
+		padding-bottom: 140px;
+		}
+	}	
+	
+.circle--medium {
+    border-radius: 50%;
+    display: block;
+    font-size: 2.625rem;
+    height: 5.49rem;
+    line-height: 5.49rem;
+    text-align: center;
+    width: 5.49rem;
+	}
+

@@ -1,0 +1,355 @@
+// Colour
+//
+//Colour any object with branding basics colours
+//
+// Styleguide 5.0
+
+// Standard Life branding basics colours
+//
+// .dark-blue - Dark blue 
+// .light-blue - Light blue 
+// .blue-tint - Blue tint 
+// .orange - Orange 
+// .yellow - Yellow 
+//
+// Markup:
+// <div class="inline-block">
+//   <div class="bg-light-grey-1 soft push inline-block secondary-font-bold alpha {$modifiers}">.{$modifiers}</div>
+// </div>
+//
+// Styleguide 5.1
+
+
+// Background colours
+//
+// .bg-dark-blue - Dark blue background
+// .bg-light-blue - Light blue background
+// .bg-blue-tint - Blue tint background
+// .bg-orange - Orange background
+// .bg-yellow - Yellow background
+//
+// Markup:
+// <div class="inline-block">
+//   <div class="soft push inline-block secondary-font-bold alpha {$modifiers}">.{$modifiers}</div>
+// </div>
+//
+// Styleguide 5.2
+
+
+// Border colours
+//
+// Set a border colour
+//
+// .border--dark-blue - Dark blue border
+// .border--light-blue - Light blue border
+// .border--blue-tint - Blue tint border
+// .border--orange - Orange border
+// .border--yellow - Yellow border
+//
+// Markup:
+// <div class="inline-block">
+//   <div class="bg-light-grey-1 soft push grey inline-block border--top border--dark-blue {$modifiers}">.{$modifiers}</div>
+// </div>
+//
+// Styleguide 5.3
+
+
+// Border positions
+//
+// Set a vertical border position
+//
+// .border - Border on all sides
+// .border--top - Border top
+// .border--bottom - Border bottom
+// .border--ends - Border ends
+//
+// Markup:
+// <div class="inline-block">
+//   <div class="bg-light-grey-1 soft push grey inline-block border--dark-blue  {$modifiers}">.{$modifiers}</div>
+// </div>
+//
+// Styleguide 5.4
+
+
+// Border size
+//
+// Set a border size
+// 
+// .border--4 - Border 4px  deep
+// .border--6 - Border 6px  deep
+// .border--8 - Border 8px  deep
+//
+// Markup:
+// <div class="inline-block">
+//   <div class="bg-light-grey-1 soft push grey inline-block border--top border--dark-blue {$modifiers}">.{$modifiers}</div>
+// </div>
+//
+// Styleguide 5.5
+
+// Border style
+//
+// Set a border style
+//
+// .border--dotted - Border dotted
+//
+// Markup:
+// <div class="inline-block">
+//   <div class="bg-light-grey-1 soft push grey inline-block border--top border--dark-blue {$modifiers}">.{$modifiers}</div>
+// </div>
+//
+// Styleguide 5.6
+
+
+/* Branding basics colours ---------------------- */
+
+.dark-blue {
+	color:$dark-blue;
+	}
+	
+.light-blue {
+	color:$light-blue;
+	}
+	
+.orange {
+	color:$orange;
+	}
+		
+.yellow {
+	color:$yellow;
+	}
+		
+.blue-tint {
+	color:$blue-tint;
+	}
+	
+.grey {
+	color:$grey;
+	}	
+	
+.white {
+	color:#fff;
+	}
+	
+	
+/* Branding basics background colours ---------------------- */
+
+.bg-dark-blue {
+	background-color:$dark-blue;
+	}
+	
+.bg-light-blue {
+	background-color:$light-blue;
+	}
+
+.bg-orange {
+	background-color:$orange;
+	}	
+	
+.bg-yellow {
+	background-color:$yellow;
+	}
+	
+.bg-blue-tint {
+	background-color:$blue-tint;
+	}
+	
+.bg-grey {
+	background-color:$grey;
+	}
+	
+.bg-white {
+	background-color:#fff;
+	}
+	
+	
+/* Grayscale colours ---------------------- */
+
+.light-grey-1 {
+	color:$light-grey-1;
+	}
+	
+.light-grey-2 {
+	color:$light-grey-2;
+	}
+	
+.light-grey-3 {
+	color:$light-grey-3;
+	}
+	
+.bg-light-grey-1 {
+	background-color:$light-grey-1;
+	}
+	
+.bg-light-grey-2 {
+	background-color:$light-grey-2;
+	}
+	
+.bg-light-grey-3 {
+	background-color:$light-grey-3;
+	}
+	
+.mid-grey-1 {
+	color:$mid-grey-1;
+	}
+	
+.mid-grey-2 {
+	color:$mid-grey-2;
+	}
+	
+.mid-grey-3 {
+	color:$mid-grey-3;
+	}
+		
+.bg-mid-grey-1 {
+	background-color:$mid-grey-1;
+	}
+	
+.bg-mid-grey-2 {
+	background-color:$mid-grey-2;
+	}
+	
+.bg-mid-grey-3 {
+	background-color:$mid-grey-3;
+	}
+	
+.dark-grey-1 {
+	color:$dark-grey-1;
+	}
+	
+.dark-grey-2 {
+	color:$dark-grey-2;
+	}
+	
+.dark-grey-3 {
+	color:$dark-grey-3;
+	}
+	
+.bg-dark-grey-1 {
+	background-color:$dark-grey-1;
+	}
+	
+.bg-dark-grey-2 {
+	background-color:$dark-grey-2;
+	}
+	
+.bg-dark-grey-3 {
+	background-color:$dark-grey-3;
+	}
+	
+	
+	
+/* Define a primary and secondary colour if appropriate ---------------------- */
+
+.primary-color {
+	color:$primary-color;
+	}
+	
+.secondary-color {
+	color:$secondary-color;
+	}
+	
+	
+	
+/* Border position ---------------------- */	
+
+.border {
+	border:2px solid $light-grey-3;
+	}
+
+.border--top {
+	border-top:2px solid $light-grey-3;
+	}
+		
+.border--bottom {
+	border-bottom:2px solid $light-grey-3;
+	}
+	
+.border--ends {
+	border-bottom:2px solid $light-grey-3;
+	border-top:2px solid $light-grey-3;
+	}
+	
+	
+	
+
+/* Border style ---------------------- */		
+.border--dotted {
+	border-style:dotted;
+	}
+	
+	
+	
+/* Border size ---------------------- */	
+
+.border--4 {
+	border-width:rem(4px);
+	}
+	
+.border--6 {
+	border-width:rem(6px);
+	}
+
+.border--8 {
+	border-width:rem(6px);
+	}
+	
+	
+	
+/* Border colour  ---------------------- */	
+
+.border--primary-color {
+	border-color:$primary-color;
+	}
+	
+.border--secondary-color {
+	border-color:$secondary-color;
+	}
+		
+.border--dark-blue {
+	border-color:$dark-blue;
+	}
+	
+.border--light-blue {
+	border-color:$light-blue;
+	}
+	
+.border--blue-tint {
+	border-color:$blue-tint;
+	}
+	
+.border--orange {
+	border-color:$orange;
+	}
+	
+.border--yellow {
+	border-color:$yellow;
+	}
+	
+.border--grey {
+	border-color:$grey;
+	}
+	
+	
+	
+/* Overlines ---------------------- */		
+.overline {
+	background-color:$dark-grey-3;
+	display:block;
+	float:none;
+	height:1px;
+	margin:lh(.66) auto;
+	}
+	
+	
+	
+.bg-pattern {
+	background-color:#063375;	
+	@include respond-min(60em) {
+		background-image:url(../images/branding/sl-pattern-01.png);
+		background-position:right top;
+		background-repeat:no-repeat;
+		background-size: contain;
+		}
+		
+	}
+	

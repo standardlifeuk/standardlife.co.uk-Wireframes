@@ -1,0 +1,154 @@
+.show-for-small-only {
+	@include respond-min(48em) {
+		display: none !important;
+		}
+	}
+		
+.show-for-medium-up {
+	@include respond-max(47.95em) {
+		display: none !important;
+		}
+	@include respond-min(48em) {
+		display: inherit !important;
+		}
+	}
+	
+.show-for-medium-only {
+	@include respond-max(47.95em) {
+		display: none !important;
+		}
+	@include respond-min(48em) {
+		display: inherit !important;
+		}
+	@include respond-min(60em) {
+		display: none !important;
+		}	
+	}
+
+.show-for-large-up {
+	@include respond-max(59.95em) {
+		display: none !important;
+		}
+	}
+	
+.show-for-large-only {	
+	@include respond-max(59.95em) {
+		display: none !important;
+		}		
+	@include respond-min(60em) {
+		display: inherit !important;
+		}		
+	@include respond-min(75em) {
+		display: none !important;
+		}	
+	
+	}
+	
+.show-for-xlarge-up {
+	@include respond-max(74.95em) {
+		display: none !important;
+		}
+	}
+	
+.show-for-xlarge-only {
+	@include respond-max(74.95em) {
+		display: none !important;
+		}
+	}
+	
+	
+	
+	
+	
+.hide-for-small-only {
+	display:none;
+	@include respond-min(48em) {
+		display: inherit !important;
+		}
+	}
+		
+.hide-for-medium-up {
+	@include respond-min(48em) {
+		display: none !important;
+		}
+	}
+	
+.hide-for-medium-only {
+	@include respond-min(48em) {
+		display: none !important;
+		}
+	@include respond-min(60em) {
+		display: inherit !important;
+		}	
+	}
+
+.hide-for-large-up {
+	@include respond-min(59.95em) {
+		display: none !important;
+		}
+	}
+	
+.hide-for-large-only {			
+	@include respond-min(60em) {
+		display: none !important;
+		}		
+	@include respond-min(75em) {
+		display: inherit !important;
+		}		
+	}
+	
+.hide-for-xlarge-up {
+	@include respond-min(74.95em) {
+		display: none !important;
+		}
+	}
+	
+.hide-for-xlarge-only {
+	display:none;
+	@include respond-max(74.95em) {
+		display: inherit !important;
+		}
+	}
+
+
+
+
+
+
+
+
+
+.hide-on-small {
+	@include respond-max(48em) {
+		@include visuallyhidden;
+		}
+	}
+
+@include respond-min(60em) {
+	.hide-on-large {
+		@include visuallyhidden;
+		}
+	}
+	
+	
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	}
+	
+	
+.hide, 
+.toggle {
+	display: none;
+	}
+	
+.toggle.show {
+	display:block;
+	}

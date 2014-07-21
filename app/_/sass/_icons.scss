@@ -1,0 +1,86 @@
+// Iconography
+//
+//There are the icons included by default for use in the user interface. You can easily add any of the below icons with just the class name. The icons are vector based, so there is no pixelation or blurring on high-resolution screens as there would be if the graphic was raster and needed to scale up. They can be controlled with CSS, like the size, color, shadow, etc.
+//<div class="row">
+//  <ul class="text--center">
+//    <li class="col small_4 medium_2 push--bottom"> <i class="icon-comment tera block"></i> .icon-comment </li>
+//    <li class="col small_4 medium_2 push--bottom"> <i class="icon-calculator tera block"></i> .icon-calculator </li>
+//    <li class="col small_4 medium_2 push--bottom"> <i class="icon-scissors tera block"></i> .icon-scissors </li>
+//    <li class="col small_4 medium_2 push--bottom"> <i class="icon-help tera block"></i> .icon-help </li>
+//    <li class="col small_4 medium_2 push--bottom"> <i class="icon-email tera block"></i> .icon-email </li>
+//    <li class="col small_4 medium_2 push--bottom"> <i class="icon-alert tera block"></i> .icon-alert </li>
+//    <li class="col small_4 medium_2 push--bottom"> <i class="icon-mouse tera block"></i> .icon-mouse </li>
+//    <li class="col small_4 medium_2 push--bottom"> <i class="icon-edit tera block"></i> .icon-edit </li>
+//    <li class="col small_4 medium_2 push--bottom"> <i class="icon-info tera block"></i> .icon-info </li>
+//    <li class="col small_4 medium_2 push--bottom"> <i class="icon-telephone tera block"></i> .icon-telephone </li>
+//    <li class="col small_4 medium_2 push--bottom"> <i class="icon-wrench tera block"></i> .icon-wrench </li>
+//    <li class="col small_4 medium_2 push--bottom"> <i class="icon-email-alt tera block"></i> .icon-email-alt </li>
+//    <li class="col small_4 medium_2 push--bottom"> <i class="icon-printer tera block"></i> .icon-printer </li>
+//    <li class="col small_4 medium_2 push--bottom"> <i class="icon-minus tera block"></i> .icon-minus </li>
+//    <li class="col small_4 medium_2 push--bottom"> <i class="icon-asterisk tera block"></i> .icon-asterisk </li>
+//    <li class="col small_4 medium_2 push--bottom"> <i class="icon-user-alt tera block"></i> .icon-user-alt </li>
+//    <li class="col small_4 medium_2 push--bottom"> <i class="icon-user tera block"></i> .icon-user </li>
+//    <li class="col small_4 medium_2 push--bottom"> <i class="icon-add tera block"></i> .icon-add </li>
+//    <li class="col small_4 medium_2 push--bottom"> <i class="icon-book tera block"></i> .icon-books </li>
+//    <li class="col small_4 medium_2 push--bottom"> <i class="icon-pages tera block"></i> .icon-pages </li>
+//    <li class="col small_4 medium_2 push--bottom"> <i class="icon-delete tera block"></i> .icon-delete </li>
+//    <li class="col small_4 medium_2 push--bottom"> <i class="icon-lightbulb tera block"></i> .icon-lightbulb </li>
+//    <li class="col small_4 medium_2 push--bottom"> <i class="icon-right-big tera block"></i> .icon-right-big </li>
+//    <li class="col small_4 medium_2 push--bottom"> <i class="icon-clock tera block"></i> .icon-clock </li>
+//    <li class="col small_4 medium_2 push--bottom"> <i class="icon-lock tera block"></i> .icon-lock </li>
+//  </ul>
+//</div>
+//
+// Styleguide 8.0
+
+
+// Icon sizing
+//
+// .tera - Tera
+// .giga - Giga
+// .mega - Mega
+// .alpha - Alpha
+// .beta - Beta
+// .gamma - Gamma
+//
+// Markup:
+// <div class="inline-block soft">
+//   <i class="icon-email light-blue {$modifiers}"></i>
+// </div>
+// <div class="inline-block soft">
+//   <i class="icon-alert light-blue {$modifiers}"></i>
+// </div>
+//
+// Styleguide 8.1
+
+// Icon colours
+//
+// .dark-blue - Dark blue
+// .light-blue - Light blue
+// .orange - Orange
+// .yellow - Yellow
+// .grey - Grey
+//
+// Markup:
+// <div class="inline-block soft">
+//   <i class="icon-email tera {$modifiers}"></i>
+// </div>
+// <div class="inline-block soft">
+//   <i class="icon-alert tera {$modifiers}"></i>
+// </div>
+//
+// Styleguide 8.2
+
+
+
+.editor-content a[href^="http"] {
+
+	}
+	
+.editor-content a[href^="http"]:after {
+	color:$mid-grey-1;
+	content: '\e808'; 
+	display:inline-block;
+	font-family:"fontello";
+	margin-left:lh(.15);
+	}

@@ -1,0 +1,201 @@
+// Images
+//
+// Styleguide 9.0
+
+// Images
+//
+// If you need to include a heading or caption for the image, include the `<figcaption>` to hold and style the text.<br />
+// Add the class `.pull--left` or `.pull--right` to the `<img>` tag to float the image to the left or the right, respectively within the content.
+//
+//
+// Markup:
+// <figure>
+// 	<img alt="Example image" src="http://placehold.it/800x480/666666/cccccc">
+// 	<figcaption>
+// 		<h4>Figure Heading</h4>
+// 		<p>This is a placeholder image, with supporting caption.</p>
+// 	</figcaption>
+// </figure>
+//
+// Styleguide 9.1
+
+
+// Images with content overlays
+//
+//<ul>
+//  <li>Only use to help make text more accessible/easier to read</li>
+//  <li>Use a minimum of 85% background tint opacity to ensure readability of text</li>
+//  <li>Use rectangle or circle shapes only</li>
+//  <li>Don’t include illustration</li>
+//  <li>Care should be taken with crafting content to ensure no overflow on smaller screen sizes</li>
+//</ul>
+// 
+//
+// Markup:
+// <figure class="relative">
+// 	<img alt="Example image" src="http://placehold.it/1500x900/666666/cccccc">
+// 	<figcaption class="panel--img-overlay">
+// 		<h4 class="primary-font giga dark-blue">Diversifying by investment style</h4>
+// 		<p class="primary-font alpha light-blue">This summer, Standard Life Mutual Funds (SLMF) made several additions to its mutual fund line-up.</p>
+//      <p class="beta">We welcomed portfolio managers Beutel, Goodman &amp; Company Ltd. and Guardian Capital LP, which added two new investment styles to our offering: value, and growth at a reasonable price (GARP). This complements the unique Focus on Change philosophy of our premier portfolio manager — Standard Life Investments.</p>
+//      <a href="#" class="btn btn--orange btn--icon">Example button <i class="icon icon-angle-right"></i></a>
+// 	</figcaption>
+// </figure>
+//
+// Styleguide 9.2
+
+
+// Images with icons
+//
+// Markup:
+//<figure>
+//  <img alt="Example image" src="http://placehold.it/400x240/666666/cccccc">
+//  <figcaption class="relative block">
+//    <i class="icon icon--image-overlay icon-camera"></i>
+//  </figcaption>
+//</figure>
+//
+// Styleguide 9.3
+
+
+// Caption variations
+//
+// Markup:
+// <div class="row">
+// <figure class="col medium_4">
+// 	<img alt="Example image" src="http://placehold.it/400x240/666666/cccccc">
+// 	<figcaption class="bg-dark-blue soft-half--ends soft--sides">
+//      <p class="secondary-font white beta">Diversifying by investment style</p>
+// 	</figcaption>
+// </figure>
+// <figure class="col medium_4">
+// 	<img alt="Example image" src="http://placehold.it/400x240/666666/cccccc">
+// 	<figcaption class="bg-orange soft-half--ends soft--sides">
+//      <p class="secondary-font white beta">Diversifying by investment style</p>
+// 	</figcaption>
+// </figure>
+// <figure class="col medium_4">
+// 	<img alt="Example image" src="http://placehold.it/400x240/666666/cccccc">
+// 	<figcaption class="bg-blue-tint soft-half--ends soft--sides">
+//      <p class="secondary-font dark-blue beta">Diversifying by investment style</p>
+// 	</figcaption>
+// </figure>
+// </div>
+//
+// Styleguide 9.4
+
+// Image ratios
+//
+// Care should be taken when choosing image ratios. Images too tall or to thin will potentially have legibility and layout issues on samller screens. The use of a consistent 5:3 ratio for all article level content and related thumbnails is recommended. This ratio will scale gracefully across a wide variety of screen sizes and devices. The example layout below illustrates the use of a consistent 5:3 image ratio.
+//
+//
+//<div class="row push--bottom">
+//  <div class="col large_6">
+//     <img alt="Example image" src="http://placehold.it/800x480/666666/cccccc" class="push--bottom">
+//  </div>
+//  <div class="col large_6">
+//     <p class="secondary-font mega">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<p>
+//  </div>
+//</div>
+//<div class="row push--bottom">
+//  <div class="col medium_6 large_3">
+//     <img alt="Example image" src="http://placehold.it/400x240/666666/cccccc">
+//     <p class="secondary-font beta">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+//  </div>
+//  <div class="col medium_6 large_3">
+//     <img alt="Example image" src="http://placehold.it/400x240/666666/cccccc">
+//     <p class="secondary-font beta">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+//  </div>
+//  <div class="col medium_6 large_3">
+//     <img alt="Example image" src="http://placehold.it/400x240/666666/cccccc">
+//     <p class="secondary-font beta">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+//  </div>
+//  <div class="col medium_6 large_3">
+//     <img alt="Example image" src="http://placehold.it/400x240/666666/cccccc">
+//     <p class="secondary-font beta">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+//  </div>
+//</div>
+//<div class="row">
+//  <div class="col medium_3">
+//		<div class="row">
+//  		<img alt="Example image" src="http://placehold.it/100x60/666666/cccccc" class="col large_4">
+//     		<p class="col large_8 secondary-font gamma">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+//  	</div>
+//  </div>
+//  <div class="col medium_3">
+//		<div class="row">
+//  		<img alt="Example image" src="http://placehold.it/100x60/666666/cccccc" class="col large_4">
+//     		<p class="col large_8 secondary-font gamma">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+//  	</div>
+//  </div>
+//  <div class="col medium_3">
+//		<div class="row">
+//  		<img alt="Example image" src="http://placehold.it/100x60/666666/cccccc" class="col large_4">
+//     		<p class="col large_8 secondary-font gamma">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+//  	</div>
+//  </div>
+//  <div class="col medium_3">
+//		<div class="row">
+//  		<img alt="Example image" src="http://placehold.it/100x60/666666/cccccc" class="col large_4">
+//     		<p class="col large_8 secondary-font gamma">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+//  	</div>
+//  </div>
+//</div>
+//
+// Styleguide 9.5
+
+
+// Responsive images
+//
+// Until browser vendors have a native solution each project and its responsive images solution should be judged on a project by project basis dependent on content requirements.
+//
+//<ul>
+//  <li><a href="http://mobile.smashingmagazine.com/2013/07/08/choosing-a-responsive-image-solution/">Choosing a Responsive Image Solution</a> Sherri Alexander, Smashing Magazine. Alexander looks at the high-level requirements for responsive images, and then dissects the variety of solutions currently available in the wild.</li>
+//  <li><a href="http://css-tricks.com/which-responsive-images-solution-should-you-use/">Which Responsive Image Solution Should You Use</a> Chris Coyier, CSS-Tricks. Coyer takes us through imaging requirements while suggesting appropriate solutions.</li>
+//  <li><a href="http://www.sitepoint.com/responsive-images-using-picturefill-php/">Picturefill</a></li>
+//  <li><a href="http://www.netvlies.nl/blog/design-interactie/retina-revolution">Compressive images</a> When considering a jpeg image's file size, the level of compression makes more of a difference than its physical dimensions.</li>
+//</ul>
+//
+// Styleguide 9.6
+
+img {
+	height: auto;
+	width: 100%;
+	}
+
+// Images with overlays
+.panel--img-overlay {
+	color:$dark-blue;
+	height:100%;
+	padding:lh(1);
+	
+	@include respond-min(60em) {
+		background-color: rgba(255,255,255,0.85);
+		bottom:lh(1);
+		height:auto;
+		right:lh(1);
+		padding:lh(1);
+		position:absolute;
+		top:lh(1);
+		width:33%;
+		z-index:1;
+		}
+		
+	}
+	
+	
+	
+// Images with icons
+.icon--image-overlay {
+	background-color:#fff;
+	color:$orange;
+	font-size:rem(21px);
+	height:lh(2);
+	left:0;
+	line-height:lh(2);
+	position:absolute;
+	text-align:center;
+	top:lh(-2);
+	width:lh(2);
+	z-index:1;
+	}

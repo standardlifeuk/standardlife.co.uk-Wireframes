@@ -1,0 +1,149 @@
+.logo {
+	margin-top: 0.5em;
+	}
+
+.logo img {
+	max-width: 118px;
+	@include respond-min(48em) {
+		margin-bottom: 2em;
+		max-width: 163px;
+		}
+	@include respond-min(60em) {
+		max-width: 230px;
+		}
+	@include respond-min(75em) {
+		margin-bottom: 3em;
+		max-width: 338px;
+		}
+	}
+	
+.hero-wrap {
+	position: relative;
+	}
+
+.hero {
+	background: #ccc;
+	background-size: cover;
+	margin-bottom: 1em;
+	padding: 2em;
+	position: relative;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); 
+	@include respond-min(59.95em) {
+		margin-bottom: 2em;
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+		}
+	}
+
+.hero-image-overlap {
+	margin-bottom: -3em;
+	@include respond-max(47.999em) {
+		display: none;
+		}
+	}
+
+.hero.small-hero {
+	background: #ccc;
+	background-size: auto;
+	margin-bottom: 1em;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); 
+	@include respond-min(59.95em) {
+		margin-bottom: 2em;
+		
+		}
+	}
+	
+.logo {
+	margin-bottom: 2em;
+	}
+	
+.hero-tagline {
+	display: none;
+	@include respond-min(48em) {
+		display: block;
+		}
+	}
+	
+.main-search {
+	margin-bottom: 0;
+	}
+	
+.main-search input {
+	float: left;
+	width: 70%;
+	}
+
+.main-search button {
+	float: right;
+	margin-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	text-align: center;
+	width: 28%;
+	}
+		
+.hero-section, 
+.hero-title {
+	bottom: 0;
+	display: block;
+	margin-bottom: 0;
+	padding: 1em 2em 2em 2em !important;
+	position: absolute;
+	-webkit-clip-path: polygon(5% 0, 95% 5%, 100% 100%, 0 100%);
+	@include respond-min(48em) {
+		padding-bottom: 1em !important;
+		}
+	@include respond-min(60em) {
+		padding-bottom: 2em !important;
+		}
+	}
+	
+.hero-section:hover, 
+.hero-section:focus {
+	background: rgba(0, 0, 0, 0.3);
+	}
+	
+.hero-section-second {
+	display: none;
+	@include respond-min(48em) {
+		display: block;
+		left: 33.28333%;
+		padding-bottom: 2em !important;
+		}
+	@include respond-min(60em) {
+		padding-bottom: 5em !important;
+		}
+	}
+	
+.hero-section h2 {
+	margin-top: 0;
+	}
+	
+.hero-title {
+	@include respond-min(48em) {
+		padding-bottom: 2em !important;
+		}
+	@include respond-min(60em) {
+		padding: 2em 4em 4em 4em !important;
+		}
+	}
+
+.small-hero .hero-title {
+	@include respond-min(48em) {
+		padding-bottom: 2em !important;
+		}
+	@include respond-min(60em) {
+		padding: 2em 4em 2em 4em !important;
+		}
+	}
+	
+.hero-overlay {
+	@include respond-min(48em) {
+		bottom: 0;
+		position: absolute;
+		right: 0;
+		}
+	}
+	
+.hero-overlay ul {
+	margin-bottom: 1em;
+	}

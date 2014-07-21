@@ -1,0 +1,10 @@
+{
+    "name": "wireframes",
+    "private": true,
+    "dependencies": {
+        "storm-base-css": "~0.1.1",
+        "modernizr": "~2.8.1",
+        "jquery": "~1.11.0"
+    }
+}
+

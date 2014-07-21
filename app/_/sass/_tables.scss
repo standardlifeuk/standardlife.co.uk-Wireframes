@@ -1,0 +1,120 @@
+// Tables
+//
+// Styleguide 16.0
+
+// Tables
+//
+// For basic styling—light padding and only horizontal dividers—add the base class `.table` to any `<table>`.
+//
+// Styleguide 16.1
+
+.table {
+	border-top:2px solid $dark-blue;
+	font-size:rem(18px);
+	margin:0 0 lh(1) 0;
+	width:100%;
+	
+	@include respond-min(48em) {
+		line-height:lh(1);
+		}
+		
+	th {
+		background-color:$blue-tint;
+		color:$dark-blue;
+		font-family:$secondary-font;
+		font-style:normal;
+		font-weight:normal;
+		padding:lh(.66) 3%;
+		text-align:left;
+		vertical-align:bottom;
+		}
+		
+	td {
+		border-bottom:1px solid $light-grey-1;
+		padding:lh(.33) 3%;
+		text-align:left;
+		}
+		 
+	}
+	
+
+// Table styles
+//
+// Add any of the following classes to the `.table` base class.
+//
+// .table--striped   - Adds zebra-striping to any table row within the `<tbody>` via the `:nth-child` CSS selector (not available in IE7-8).
+// .table--hover     - Enable a hover state on table rows within a `<tbody>`.
+// .table--condensed - Makes tables more compact by cutting cell padding in half.
+//
+// Markup:
+// <table class="table {$modifiers}" summary="Interest rates start at 1.6% for Young Savers accounts and at 2% for Smart accounts">
+//   <thead>
+//     <tr>
+//       <th>No.</th>
+//       <th>First Name</th>
+//       <th>Last Name</th>
+//       <th>Username</th>
+//     </tr>
+//   </thead>
+//   <tbody>
+//     <tr>
+//       <td>1</td>
+//       <td>Mark</td>
+//       <td>Otto</td>
+//       <td>@mdo</td>
+//     </tr>
+//     <tr>
+//       <td>2</td>
+//       <td>Jacob</td>
+//       <td>Thornton</td>
+//       <td>@fat</td>
+//     </tr>
+//     <tr>
+//       <td>3</td>
+//       <td>Larry</td>
+//       <td>the Bird</td>
+//       <td>@twitter</td>
+//     </tr>
+//   </tbody>
+// </table>
+//
+// Styleguide 16.2
+
+
+// CONDENSED TABLE W/ HALF PADDING
+// -------------------------------
+
+.table--condensed {
+	font-size:rem(15px);
+	th, td {
+		padding: 4px 5px;
+		}
+	}
+
+
+// ZEBRA-STRIPING
+// --------------
+
+// Default zebra-stripe styles (alternating gray and transparent backgrounds)
+.table--striped {
+  tbody {
+    > tr:nth-child(even) > td,
+    > tr:nth-child(even) > th {
+      background-color: $light-grey-1;
+    }
+  }
+}
+
+
+// HOVER EFFECT
+// ------------
+// Placed here since it has to come after the potential zebra striping
+.table--hover {
+  tbody {
+    tr:hover > td,
+    tr:hover > th {
+      background-color: lighten($yellow, 20%);
+    }
+  }
+}
+

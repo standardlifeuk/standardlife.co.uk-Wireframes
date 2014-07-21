@@ -1,0 +1,283 @@
+@font-face {
+	font-family: 'standard_liferegular';
+	src: url('../webfonts/standardlife/standardlife-regular-webfont.eot');
+	src: url('../webfonts/standardlife/standardlife-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../webfonts/standardlife/standardlife-regular-webfont.woff') format('woff'),
+		 url('../webfonts/standardlife/standardlife-regular-webfont.ttf') format('truetype'),
+		 url('../webfonts/standardlife/standardlife-regular-webfont.svg#standard_liferegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	
+	}
+	
+@font-face {
+	font-family: 'standard_lifebold';
+	src: url('../webfonts/standardlife/standardlife-bold-webfont.eot');
+	src: url('../webfonts/standardlife/standardlife-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../webfonts/standardlife/standardlife-bold-webfont.woff') format('woff'),
+		 url('../webfonts/standardlife/standardlife-bold-webfont.ttf') format('truetype'),
+		 url('../webfonts/standardlife/standardlife-bold-webfont.svg#standard_lifebold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	}
+		
+@font-face {
+    font-family: 'metabook';
+    src: url('../webfonts/meta/mtbkrg-webfont.eot');
+    src: url('../webfonts/meta/mtbkrg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webfonts/meta/mtbkrg-webfont.woff') format('woff'),
+         url('../webfonts/meta/mtbkrg-webfont.ttf') format('truetype'),
+         url('../webfonts/meta/mtbkrg-webfont.svg#metabook-romanregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	}
+
+@font-face {
+    font-family: 'metabold';
+    src: url('../webfonts/meta/mtbdrg-webfont.eot');
+    src: url('../webfonts/meta/mtbdrg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webfonts/meta/mtbdrg-webfont.woff') format('woff'),
+         url('../webfonts/meta/mtbdrg-webfont.ttf') format('truetype'),
+         url('../webfonts/meta/mtbdrg-webfont.svg#metabold-romanregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	}
+	
+	
+html, 
+body, 
+button, 
+input, 
+select, 
+textarea, 
+.secondary-font {
+	font-family: $secondary-font;
+	}
+	
+.primary-font-bold {
+	font-family: $primary-font-bold;
+	}
+	
+.secondary-font-bold {
+	font-family:$secondary-font-bold;	
+	}
+	
+/* Modular Scale http://modularscale.com/scale/?px1=16&px2=32&ra1=1.618&ra2=0 */
+
+.tera {
+	font-size:rem(32px);
+	line-height: 1.05;
+	@include respond-min(48em) {
+		font-size:rem(38px);
+		line-height:1.125;
+		}
+	@include respond-min(60em) {
+		font-size: rem(44px);
+		line-height:1.05
+		}
+	}
+
+.giga { 
+	font-size:rem(26px);
+	line-height:1.15;
+	@include respond-min(48em) {
+		font-size:rem(32px);
+		line-height:1.25;
+		}
+	@include respond-min(60em) {
+		font-size:rem(36px);
+		line-height:1.25;
+		}
+	}
+
+.mega { 
+	font-size:rem(22px);
+	line-height: 1.136;
+	@include respond-min(48em) {
+		font-size:rem(24px);
+		line-height:1.25;
+		}
+	@include respond-min(60em) {
+		font-size:rem(28px);
+		line-height:1.25;
+		}
+	}
+
+.alpha { 
+	font-size:rem(19px);
+	line-height: 1.1;
+	@include respond-min(48em) {
+		font-size:rem(26px);
+		line-height:1.2;
+		}
+	}
+
+.beta {  
+	font-size:rem(16px);
+	}
+
+.gamma {  
+	font-size:rem(14px);
+	}	
+
+.delta {  
+	font-size:rem(12.4px);
+	}
+
+.epsilon {  
+	font-size:rem(9.88px);
+	line-height:rem(12px);
+	}
+
+h1,
+h2,
+h3,	
+h4,
+h5,
+h6 {	
+	 font-family: $primary-font;
+	 font-weight:normal;
+	}
+	
+h2 {
+	margin-top: 2em;
+	}
+	
+h3 {
+	margin-top: 1em;
+	}
+
+a {
+	color:$light-blue;
+	text-decoration:none;
+	&:hover {
+		color:$dark-blue;
+		text-decoration:underline;
+		}
+	}
+		
+.run-in {
+	font-size:rem(18.7px);
+	line-height:lh(.88);
+	margin-bottom:lh(.66);
+	}
+
+ul, 
+ol {
+	margin: 0;
+	}
+	
+ul {
+	list-style-type:disc;
+	}
+	
+ol {
+	list-style-type:decimal;
+	}
+
+li {
+	margin-left: 1.5em;
+	}
+
+p, 
+ul, 
+ol {
+	margin-bottom: lh(.5);
+	}
+
+figure.quote {
+	border-left: 6px solid $dark-blue;
+	color:$dark-blue;
+	font-family:$secondary-font;
+	font-size:rem(26px);
+	font-weight:normal;
+	line-height:1;
+	margin:lh(1) 0;
+	padding:0 lh(.33) 0 lh(.66);
+	position:relative;
+	}
+	
+figure.quote blockquote:before,
+figure.quote blockquote:after {
+	color:$dark-blue;
+	content: "\201C";
+	display: inline;
+	font-size:rem(36px);
+	font-style:normal;
+	}
+	
+figure.quote blockquote:after {
+	content: "\201D";
+	}
+
+figure.quote figcaption {
+	color:$light-blue;
+	display: block;
+	font-family:$primary-font;
+	font-size:rem(14px);
+	font-style:normal;
+	margin-top: lh(.33);
+	}
+	
+figure.quote cite {
+	font-family:$primary-font;
+	font-style:normal;
+	}	
+ 
+figure.quote cite:before {
+	content: "\2014 \2009";
+	}
+	
+.quote--pull-left {
+	@include respond-min(60em) {
+		float:left;
+		margin-left:perc(-60,700);
+		margin-right:lh(.66);
+		width:46%;
+		}
+	}
+	
+.quote--pull-right {
+	@include respond-min(60em) {
+		border-left: none;
+		border-right: 8px solid $dark-blue;
+		float:right;
+		margin-right:perc(-60,700);
+		margin-left:lh(.66);
+		padding:0 lh(.66) 0 lh(.66);
+		text-align:right;
+		width:46%;
+		}
+		
+	}
+
+		
+.overline_1 {
+	background-color:$dark-grey-3;
+	height:1px solid;
+	margin:lh(.66) auto;
+	width:40px;
+	}
+	
+.bold {
+	font-weight:bold;
+	}
+	
+.italic {
+	font-style:italic;
+	}	
+	
+.uppercase {
+	text-transform: uppercase;
+	}
+	
+.letterspace {
+	letter-spacing:rem(5px);
+	}
+
+.muted, 
+a.muted,
+.lister a.muted {
+	color:$mid-grey-2;
+	}	
+	

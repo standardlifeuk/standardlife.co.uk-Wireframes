@@ -1,0 +1,178 @@
+.editor-content {	
+
+	h2, h3 ,h4 {
+		color:$dark-blue;
+		font-family:$primary-font;
+		
+		}
+	
+	h3 ,h4 {
+		font-family:$secondary-font-bold;
+		font-weight:normal;
+		}
+			
+	h2 { 
+		font-size:rem(26px);
+		line-height:1.15;	
+		margin-bottom:lh(.75);
+		@include respond-min(48em) {
+			font-size:rem(32px);
+			line-height:1.25;
+			}
+			
+		@include respond-min(60em) {
+			font-size:rem(36px);
+			line-height:1.25;
+			}
+			
+		}
+	
+	h3 { 
+		font-size:rem(22px);
+		line-height: 1.136;
+		
+		@include respond-min(48em) {
+			font-size:rem(24px);
+			line-height:1.25;
+			}
+			
+		@include respond-min(60em) {
+			font-size:rem(28px);
+			line-height:1.25;
+			}
+
+		}
+	
+	h4 { 
+		font-size:rem(18px);
+		line-height: 1.1;
+		
+		@include respond-min(48em) {
+			line-height:1.2;
+			}
+
+		}
+			
+	p, ul, ol {
+		color:$grey;
+		font-family:$secondary-font;
+		font-size:rem(18px);
+		margin-bottom:lh(.75);
+		}
+		
+	ul, ol {
+		margin-bottom:lh(1);
+		margin-left:lh(1);
+		margin-right:lh(1);
+		}
+		
+	li {
+		margin-bottom:lh(.25);
+		}
+		
+	a {
+		&:hover {
+			@include transitions();
+			}
+		}
+		
+	.run-in { 
+		font-size:rem(22px);
+		line-height: 1.136;
+		
+		@include respond-min(48em) {
+			font-size:rem(24px);
+			line-height:1.25;
+			}
+			
+		@include respond-min(60em) {
+			font-size:rem(28px);
+			line-height:1.25;
+			}
+		}
+		
+	.drop-cap {
+		display: block;
+		float: left;
+		font-size: 400%;
+		font-style: bold;
+		font-weight: 100;
+		line-height: 0.5;
+		margin: lh(.75) lh(.5) lh(.5) 0;
+		}
+
+	.pull-center {
+		float:none;
+		@include respond-min(48em) {
+			text-align:center;
+			}
+		}
+		
+	.pull-left {
+		float:none;
+		@include respond-min(48em) {
+			float:left;
+			margin:0 lh(1) lh(1) 0;
+			width:45%;
+			}
+		}
+		
+	.pull-right {
+		float:none;
+		@include respond-min(48em) {
+			float:right;
+			margin:0 0 lh(1) lh(1);
+			width:45%;
+			}
+		}
+
+	 table {
+		@include respond-min(75em) {
+			margin-left: -11%;
+			margin-right: -34%;
+			width:145%;
+			}
+		}
+		
+	figcaption {
+		margin:0;
+		min-height:0;
+		}
+	
+	.image {
+		margin:0 0 lh(1) 0;
+		}
+
+	.image figcaption {
+		background-color:$light-grey-1;
+		color:$dark-grey-2;
+		font-size:rem(14px);
+		padding:lh(.33) lh(.66) lh(.66) lh(.66);
+		position:relative;
+		}
+		
+	.image figcaption:before  { 
+		color:$mid-grey-2;
+		content: '\E823'; 
+		display: inline; 
+		font-family:"fontello";
+		font-size: rem(14px); 
+		margin-right:lh(.33);
+		}
+
+	}
+
+.pull-quote {
+	font-size: 1.5em;
+	line-height: 1.4;
+	margin-bottom: 1em;
+	@include respond-min(48em) {
+		float:right;
+		margin:0 0 lh(1) lh(1);
+		width:45%;
+		}
+	}
+
+.fluid-width-video-wrapper {
+	margin-top: 2em;
+	}

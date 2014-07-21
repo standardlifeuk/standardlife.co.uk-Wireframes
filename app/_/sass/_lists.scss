@@ -1,0 +1,288 @@
+// Lists
+//
+// Ordered and unordered lists
+//
+// Round bullets
+//
+//Markup:
+//<ul class="list list--bullets-round list--striped">
+//  <li class="list__item">
+//    List item
+//  </li>
+//  <li class="list__item">
+//    List item
+//  </li>
+//  <li class="list__item">
+//    List item
+//  </li>
+//  <li class="list__item">
+//    List item
+//  </li>
+//  <li class="list__item">
+//    List item
+//  </li>
+//  <li class="list__item">
+//    List item
+//  </li>
+//</ul>
+//
+// Styleguide 11.0
+
+
+
+// Square bullets
+//
+//Markup:
+//<ul class="list list--bullets-square">
+//  <li class="list__item">
+//    List item
+//  </li>
+//  <li class="list__item">
+//    List item
+//  </li>
+//  <li class="list__item">
+//    List item
+//  </li>
+//</ul>
+//
+// Styleguide 11.1
+
+
+
+// Numeric
+//
+//Markup:
+//<ol class="list list--numeric">
+//  <li class="list__item">
+//    List item
+//  </li>
+//  <li class="list__item">
+//    List item
+//  </li>
+//  <li class="list__item">
+//    List item
+//  </li>
+//</ol>
+//
+// Styleguide 11.2
+
+
+
+
+// Alpha 
+//
+// Markup:
+//<ol class="list list--alpha">
+//  <li class="list__item">
+//    List item
+//  </li>
+//  <li class="list__item">
+//    List item
+//  </li>
+//  <li class="list__item">
+//    List item
+//  </li>
+//</ol>
+//
+// Styleguide 11.3
+
+
+
+// Iconed list
+//
+// Markup:
+//<ul class="list list--iconed">
+//  <li class="list__item--iconed">
+//    <i class="icon icon-clock"></i>
+//    Iconed List item
+//  </li>
+//  <li class="list__item--iconed">
+//    <i class="icon icon-telephone"></i>
+//    Iconed List item
+//  </li>
+//  <li class="list__item--iconed">
+//    <i class="icon icon-alert"></i>
+//    Iconed List item
+//  </li>
+//</ul>
+//
+// Styleguide 11.4
+
+
+
+// Action link iconed list
+//
+// Lists of user/review action links should appear in a special iconed-list.
+//
+// Markup:
+//<ul class="list list--iconed">
+//  <li class="list__item--iconed">
+//    <a href="#">
+//      <i class="icon icon-delete orange"></i>
+//      Iconed List item
+//    </a>
+//  </li>
+//</ul>
+//
+// Styleguide 11.5
+
+
+// Navigation list
+//
+// Lists of user/review action links should appear in a special iconed-list.
+//
+// Markup:
+//<ul class="list list--nav">
+//  <li class="list__item--nav">
+//    <a href="#" class="list__link--nav">   
+//      Navigation style list item
+//      <i class="icon icon-angle-right"></i>
+//    </a>
+//  </li>
+//  <li class="list__item--nav">
+//    <a href="#" class="list__link--nav">   
+//      Navigation style list item
+//      <i class="icon icon-angle-right"></i>
+//    </a>
+//  </li>
+//  <li class="list__item--nav">
+//    <a href="#" class="list__link--nav">   
+//      Navigation style list item
+//      <i class="icon icon-angle-right"></i>
+//    </a>
+//  </li>
+//  <li class="list__item--nav">
+//    <a href="#" class="list__link--nav">   
+//      Navigation style list item
+//      <i class="icon icon-angle-right"></i>
+//    </a>
+//  </li>
+//  <li class="list__item--nav">
+//    <a href="#" class="list__link--nav">   
+//      Navigation style list item
+//      <i class="icon icon-angle-right"></i>
+//    </a>
+//  </li>
+//</ul>
+//
+// Styleguide 11.6
+
+
+.list {
+	font-family:$secondary-font;
+	font-size:rem(18px);
+	list-style-type:none;
+	margin:0;
+	}
+	
+.list__item {
+	padding:lh(.166) 0;
+	}
+	
+.list--bullets-round {
+	list-style-type:disc;
+	}
+	
+.list--bullets-square {
+	list-style-type: square;
+	}
+	
+.list--numeric {
+	list-style-type: decimal;
+	margin-left:lh(1);
+	}
+	
+.list--alpha {
+	list-style-type: lower-alpha;
+	margin-left:lh(1);
+	}
+	
+.list--iconed {
+	list-style-type: none;
+	margin-left:lh(1);
+	}
+	
+.list--nav {
+	
+	}
+
+.list__item--nav {
+	border-bottom:1px solid $blue-tint;
+	}
+
+.list__link--nav {
+	
+	display:block;
+	color:$light-blue;
+	padding:lh(.33) 0;
+	
+	&:hover {
+		background-color:$blue-tint;
+		color:$dark-blue;
+		}
+		
+	.icon {
+		color:$orange;
+		}
+		
+	}
+	
+
+ .list--striped { 	
+	.list__item:nth-child(even), 
+	.list__item--nav:nth-child(even) .list__link--nav {
+		background-color: $light-grey-1;
+		}
+	
+	.list__item, 
+	.list__link--nav {
+		padding-left:lh(.33);
+		padding-right:lh(.33);
+		}
+
+	}
+	
+	
+.icon--overlay {
+	background-color:#fff;
+	font-size:rem(22px);
+	left:0;
+	padding:lh(.25);
+	position:absolute;
+	top:0px;
+	@include respond-min(48em) {
+		font-size:rem(32px);
+		}
+	}
+	
+	
+.list--footer {
+	.list__link {
+		color:$light-blue;
+		font-size:rem(13px);
+		text-decoration:none;
+		&:hover {
+			color:$blue-tint;
+			}
+		}
+	}
+	
+.list .list {
+	border-top: 1px solid $blue-tint;
+	}
+	
+.list .list li {
+	list-style-type: none;
+	}
+	
+.list .list li:last-child {
+	border: 0;
+	}
+	
+.list .list li a {
+	padding-left: 2em;
+	}
+	
+.list .active {
+	font-family: $secondary-font-bold;
+	}

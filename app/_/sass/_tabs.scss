@@ -1,0 +1,322 @@
+// Tabs
+//
+// Tabs are elements that help you organize and navigate multiple documents in a single container. They can be used for switching between items in the container.
+//
+// Markup:
+//<dl class="cf tabs">
+//  <dd class="active tabs__item">
+//    <a href="#simple1" class="tabs__link">
+//      Tab 1
+//    </a>
+//  </dd>
+//  <dd class="tabs__item">
+//    <a href="#simple2" class="tabs__link">
+//      Tab 2
+//    </a>
+//  </dd>
+//  <dd class="tabs__item">
+//    <a href="#simple3" class="tabs__link">
+//      Tab 3
+//    </a>
+//  </dd>
+//  <dd class="tabs__item">
+//    <a href="#simple4" class="tabs__link">
+//      Tab 4
+//    </a>
+//  </dd>
+//</dl>
+//<ul class="cf tabs__content">
+//  <li id="simple1Tab" class="active">
+//    First panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+//  </li>
+//  <li id="simple2Tab">
+//    Second panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+//  </li>
+//  <li id="simple3Tab">
+//    Third panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+//  </li>
+//  <li id="simple4Tab">
+//    Fourth panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+//  </li>
+//</ul>
+//
+// Styleguide 15.0
+
+
+	
+// Responsive tabs to accordion
+//
+//  Easy responsive tabs is a lightweight jQuery plugin which optimizes normal horizontal or vertical tabs to accordion on multi devices like: web, tablets, Mobile (IPad & IPhone). This plugin adapts the screen size and changes its form accordingly. <a href="https://github.com/samsono/Easy-Responsive-Tabs-to-Accordion">Easy responsive tabs on Github</a>
+// 
+// Markup:
+//<div id="horizontalTab">
+// <ul class="resp-tabs-list">
+//   <li>
+//     Tab 1
+//   </li>
+//   <li>
+//      Tab 2
+//   </li>
+//   <li>
+//      Tab 3
+//   </li>
+//   <li>
+//      Tab 4
+//   </li>
+//  </ul>
+//  <div class="resp-tabs-container">
+//    <div>
+//       First panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+//    </div>
+//    <div>
+//      Second panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+//    </div>
+//    <div>
+//      Third panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+//    </div>
+//    <div>
+//      Fourth panel content goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+//    </div>
+//  </div>
+//</div>	
+//
+// Styleguide 15.1	
+
+
+
+.tabs { 
+	@include clearfix();
+	border-bottom: solid 1px $light-grey-2;
+	display: block; 
+	font-family:$primary-font;
+	height:lh(2);
+	list-style: none;
+	margin-bottom:lh(); 
+	padding: 0 lh(.33); 
+	}
+	
+.tabs__item { 
+	display: block; 
+	float: left; 
+	margin: 0; 
+	padding: 0; 
+	}
+
+.tabs__link { 
+	background-color:$blue-tint;
+	border-left: 1px solid $blue-tint;
+	border-top: 2px solid $blue-tint;
+	color:$light-blue;
+	display: block; 
+	font-size:rem(16px);
+	height:rem(48px);
+	line-height:lh(2);
+	padding: 0 lh(1);
+	text-decoration:none;
+	
+	&:hover {
+		color:$dark-blue;
+		cursor: pointer; 
+		text-decoration:none;
+		}
+		
+	@include respond-min(48em) {
+		font-size:rem(18px);
+		padding: 0 lh(1);
+		}
+		
+	}
+	
+.active .tabs__link  { 
+	background-color:#fff;
+	border-left: 1px solid $blue-tint;
+	border-right: 1px solid $blue-tint;
+	border-top: 2px solid $dark-blue; 
+	color:$dark-blue;
+	cursor: default; 
+	text-shadow:none;
+	}
+	
+
+ul.tabs__content { 
+	display: block; 
+	margin: 0 0 20px 0;
+	}
+
+ul.tabs__content > li { 
+	display: none; 
+	}
+
+ul.tabs__content > li.active { 
+	display: block; 
+	margin:0;
+	padding:0;
+	}
+
+.no-js ul.tabs__content > li { 
+	display: block;
+	}
+	
+	
+	
+
+	
+.resp-tabs-list {
+	@include clearfix();
+	border-bottom: solid 1px $light-grey-2;
+	height:rem(48px);
+	margin: 0;
+	padding: 0 0 0 lh(.33);
+	}
+
+.resp-tab-item {
+	background-color:$blue-tint;
+	border-left: 1px solid $blue-tint;
+	border-top: 2px solid $blue-tint;
+	color:$light-blue;
+	cursor: pointer;
+	display: block;
+	float: left;
+	font-family:$secondary-font;
+	font-size:rem(16px);
+	height:rem(48px);
+	line-height:rem(48px);
+	list-style: none;
+	margin:0;
+	padding: 0 lh(1);
+	&:hover {
+		color:$dark-blue;
+		cursor: pointer; 
+		}
+		
+	}
+	
+.resp-tabs-list .resp-tab-active, 
+.resp-tabs-list .resp-tab-active:hover {
+	background-color:#fff;
+	border-left: 1px solid $blue-tint;
+	border-right: 1px solid $blue-tint;
+	border-top: 2px solid $dark-blue; 
+	color:$dark-blue;
+	cursor: pointer; 
+	text-shadow:none;
+	}
+
+.resp-content-active, 
+.resp-accordion-active {
+	display: block;
+	}
+
+.resp-tabs-container {
+	background-color: #fff;
+	clear: left;
+	margin-bottom:lh(1);
+	padding: 0px;
+	@include respond-min(60em) {
+		padding: lh(.66) 0;
+		}
+	}
+
+.resp-accordion {
+	background-color: $blue-tint;
+	border-bottom: 1px solid $light-blue;
+	border-bottom:none;
+	color:$light-blue;
+	cursor: pointer;
+	display: none;
+	font-family:$secondary-font;
+	margin: 0;
+	padding: lh(.5) lh(1);
+	}
+	
+.resp-tab-content {
+	display: none;
+	padding:lh(.33) 0;
+	@include respond-min(60em) {
+		padding: lh(.66) lh(1);
+		}
+	}
+
+.resp-tab-title:last-child {
+	border-bottom: 12px solid $mid-grey-1;
+	background: blue;
+	}
+	
+/*-----------Accordion styles-----------*/
+
+.resp-tabs-container .resp-tab-active {
+	background-color: $light-blue;
+	border-color: $light-blue;
+	color:#fff;
+	}
+	
+.resp-easy-accordion .resp-accordion {
+	display: block;
+	}
+	
+.resp-easy-accordion .resp-tab-content {
+	border: 1px solid $mid-grey-1;
+	}
+
+.resp-easy-accordion .resp-tab-content:last-child {
+	border-bottom: 1px solid $mid-grey-1;
+	}
+
+.resp-jfit {
+	margin: 0px;
+	width: 100%;
+	}
+
+.resp-tab-content-active {
+	display: block;
+	}
+
+.resp-accordion:first-child {
+	
+	}
+
+/*Here your can change the breakpoint to set the accordion, when screen resolution changed*/
+@include respond-max(60em) {
+	
+    ul.resp-tabs-list {
+        display: none;
+    	}
+
+    .resp-accordion {
+        display: block;
+    	}
+
+    .resp-accordion-closed {
+        display:none !important;
+    	}
+
+	}
+	
+.resp-arrow {
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 12px solid $light-blue;
+	height: 0;
+	float: right;
+	margin-top: 3px;
+	width: 0;
+	}
+
+.resp-tab-active span.resp-arrow {
+	border: none;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-bottom: 12px solid #fff;
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
