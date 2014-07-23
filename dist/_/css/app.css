@@ -1,24 +1,20 @@
+@charset "UTF-8";
 @-webkit-viewport {
   width: device-width;
 }
-
 @-moz-viewport {
   width: device-width;
 }
-
 @-ms-viewport {
   width: device-width;
   zoom: 1.0;
 }
-
 @-o-viewport {
   width: device-width;
 }
-
 @viewport {
   width: device-width;
 }
-
 /*=Brand Basics colours
 ------------------------------------------------*/
 /*=Additional Grey UI Colours - helpful when wireframing
@@ -661,20 +657,8 @@ body:after {
   }
 }
 
-@media screen and (min-width: 60em) {
-  .push_1--large {
-    margin-left: 9.58333%;
-  }
-}
-
 @media screen and (min-width: 48em) {
   .push_2 {
-    margin-left: 17.91667%;
-  }
-}
-
-@media screen and (min-width: 60em) {
-  .push_2--large {
     margin-left: 17.91667%;
   }
 }
@@ -691,14 +675,32 @@ body:after {
   }
 }
 
-@media screen and (min-width: 48em) {
-  .pull_1 {
-    margin-right: 9.58333%;
+@media screen and (min-width: 60em) {
+  .push_0--large {
+    margin-left: 1.25%;
   }
 }
 
 @media screen and (min-width: 60em) {
-  .pull_1--large {
+  .push_1--large {
+    margin-left: 9.58333%;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .push_2--large {
+    margin-left: 17.91667%;
+  }
+}
+
+@media screen and (min-width: 90em) {
+  .push_1--xlarge {
+    margin-left: 9.58333%;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .pull_1 {
     margin-right: 9.58333%;
   }
 }
@@ -718,6 +720,18 @@ body:after {
 @media screen and (min-width: 48em) {
   .pull_4 {
     margin-right: 34.58333%;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .pull_0--large {
+    margin-right: 1.25%;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .pull_1--large {
+    margin-right: 9.58333%;
   }
 }
 
@@ -2139,6 +2153,20 @@ img {
   z-index: 1;
 }
 
+.max-width--medium {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 24em;
+}
+@media screen and (min-width: 48em) {
+  .max-width--medium {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: auto;
+  }
+}
+
 .block {
   display: block;
 }
@@ -2228,6 +2256,12 @@ img {
 
 .push--top {
   margin-top: 24px !important;
+}
+
+@media screen and (min-width: 48em) {
+  .push-double--top--large {
+    margin-top: 48px !important;
+  }
 }
 
 .push--right {
@@ -3043,7 +3077,6 @@ ul.tabs__content > li.active {
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'standard_lifebold';
   src: url("../webfonts/standardlife/standardlife-bold-webfont.eot");
@@ -3051,7 +3084,6 @@ ul.tabs__content > li.active {
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'metabook';
   src: url("../webfonts/meta/mtbkrg-webfont.eot");
@@ -3059,7 +3091,6 @@ ul.tabs__content > li.active {
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'metabold';
   src: url("../webfonts/meta/mtbdrg-webfont.eot");
@@ -3067,7 +3098,6 @@ ul.tabs__content > li.active {
   font-weight: normal;
   font-style: normal;
 }
-
 html,
 body,
 button,
@@ -3993,7 +4023,6 @@ h2 {
   font-weight: normal;
   font-style: normal;
 }
-
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 /*
@@ -4418,6 +4447,9 @@ h2 {
   margin: 0;
 }
 
+.next-actions-related {
+  clear: both;
+}
 @media screen and (min-width: 48em) {
   .next-actions-related {
     bottom: 0;
