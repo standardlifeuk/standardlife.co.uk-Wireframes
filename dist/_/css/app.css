@@ -1614,6 +1614,12 @@ body {
   display: none;
 }
 
+.jump-link {
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
 .btn {
   background-color: #e6e6e6;
   background-color: #007bc3;
