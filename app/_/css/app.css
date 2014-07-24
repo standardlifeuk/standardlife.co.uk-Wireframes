@@ -1,20 +1,24 @@
-@charset "UTF-8";
 @-webkit-viewport {
   width: device-width;
 }
+
 @-moz-viewport {
   width: device-width;
 }
+
 @-ms-viewport {
   width: device-width;
   zoom: 1.0;
 }
+
 @-o-viewport {
   width: device-width;
 }
+
 @viewport {
   width: device-width;
 }
+
 /*=Brand Basics colours
 ------------------------------------------------*/
 /*=Additional Grey UI Colours - helpful when wireframing
@@ -3083,6 +3087,7 @@ ul.tabs__content > li.active {
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'standard_lifebold';
   src: url("../webfonts/standardlife/standardlife-bold-webfont.eot");
@@ -3090,6 +3095,7 @@ ul.tabs__content > li.active {
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'metabook';
   src: url("../webfonts/meta/mtbkrg-webfont.eot");
@@ -3097,6 +3103,7 @@ ul.tabs__content > li.active {
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'metabold';
   src: url("../webfonts/meta/mtbdrg-webfont.eot");
@@ -3104,6 +3111,7 @@ ul.tabs__content > li.active {
   font-weight: normal;
   font-style: normal;
 }
+
 html,
 body,
 button,
@@ -4032,6 +4040,7 @@ h2 {
   font-weight: normal;
   font-style: normal;
 }
+
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 /*
