@@ -1,7 +1,7 @@
 standardlife.co.uk Wireframes
 =============================
 
-To run this app you will need to install these first:
+To run this app you will need to have these installed:
 - [Node](http://nodejs.org/)
 - [NPM](https://www.npmjs.org/)
 - [Gulp](http://gulpjs.com/)
